@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background-color: #37372f;
+    font-family: arial;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+select, button, i, .history span{
+    cursor: pointer;
+}
+.CodeMirror{
+    height: calc( 100vh - 40px );
+}
+.codeSite{
+    flex: 0 0 auto;
+    height: calc( 100vh - 40px );
+    width: 50%;
+    vertical-align: top;
+}
+iframe{
+    width: 100%;
+    height: calc( 100vh - 40px );
+    background: white;
+}
+.iframeView{
+    flex: 1 1 auto;
+    width: 100%;
+    vertical-align: top;
+}
+.blockIframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.history{
+    height: 40px;
+}
+.history span{
+    color: white;
+    line-height: 40px;    
+}
+.history i{
+    color: white;
+    font-size: 24px;
+    vertical-align: middle;
+}
+#send{
+    float: right;
+}
+select, button{
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+    margin: 9px;
+}
+.splitter{
+    height: 100%;
+    flex: 0 0 auto;
+    width: 8px;
+    cursor: col-resize;
+}
+.raw{
+    float: right;
+}
+
+.historyW {
+    color : #e4e4e4;
+    background : rgba(0, 0, 0, 0.7);
+    padding : 10;
+    z-index: 10;
+    border-radius: 5px;
+    position : absolute;
+    margin-top : 5vh;
+    max-height : 85vh;   
+}
+
+.historyW > div{
+    max-height: calc( 85vh - 30px);
+    overflow: scroll;
+}  
+
+.historyW > div div{
+    max-height: calc( 85vh - 22px);
+    padding : 2px;    
+}  
+.historyW .icon-cancel-circled{
+    color: #f44336;
+    float: right;
+}    
+
+.historyW .deleteAll{
+    background: #f44336;
+    color: white;
+}
+.historyW .exit{
+    float: right;
+}
