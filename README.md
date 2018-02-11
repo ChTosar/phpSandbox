@@ -15,7 +15,7 @@ Drop the folder in your server and check the permissions and user owner, create 
 
 # Configure Server list
 
-For use Php Sandbox in more installations/instances of php only need isstall the same files in the others serves and acced directly or by other instances configurin the file of server_list.php folowing the array example.
+For use Php Sandbox in more installations/instances of php only need isstall the same files in the others serves and access directly or by other instances configuring the file of server_list.php folowing the array example.
 
 ```
 $serverList = array( 
